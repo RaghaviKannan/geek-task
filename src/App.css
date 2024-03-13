@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-bar {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-icon {
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.search-icon:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.pagination button.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.delete-selected {
+  padding: 8px 12px;
+  border: none;
+  background-color: #dc3545;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-selected:hover {
+  background-color: #c82333;
 }
